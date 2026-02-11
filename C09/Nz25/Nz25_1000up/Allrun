@@ -1,0 +1,20 @@
+#!/bin/bash
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+foamListTimes -rm
+rm -r ./constant/polyMesh
+rm *.dat
+rm -r dynamicCode
+rm -r postProcessing
+rm -r 0
+
+cp -r 0.orig/ 0/
+blockMesh
+checkMesh
+setFields
+
+interFoam > log &
+
+pyFoamPlotWatcher.py log  
+
+postProcess -func sampleDict -latestTime 

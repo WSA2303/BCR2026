@@ -1,0 +1,17 @@
+// rheology parameters of mud 
+
+ 	rho_concrete		1560;				// density [kg/m³]
+ 	
+ 	nu0_concrete	        0.018083;				// kinematic viscosity [m²/s]
+ 	
+ 	
+ 	tau0_concrete	        0.025517;				// yield stress [m²/s²]	
+ 		
+ 	k_concrete		0.0005833;				// consistency Index [m²/s]
+
+	n_concrete		1;				// Flow Behaviour Index [-]
+	
+	
+	
+	
+

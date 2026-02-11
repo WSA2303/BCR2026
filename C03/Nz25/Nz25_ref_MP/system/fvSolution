@@ -1,0 +1,115 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solvers
+{
+    "alpha.concrete.*"
+    {
+        nAlphaCorr      5;
+        nAlphaSubCycles 1;
+        cAlpha          1;
+
+        MULESCorr       yes;
+	//alphaApplyPrevCorr	yes;
+        nLimiterIter    10;
+
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-6;
+        relTol          0;
+    }
+
+    "pcorr.*"
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-8;
+        relTol          0;
+    }
+
+    p_rgh
+    {
+        solver          PCG;
+        preconditioner  
+	{
+		preconditioner     GAMG;
+		smoother           DICGaussSeidel;
+		tolerance 	   1e-06;
+	}
+        tolerance       1e-06;
+	relTol		   0;
+    }
+
+    p_rghFinal
+    {
+        $p_rgh;
+        tolerance       1e-06;
+        relTol          0;
+    }
+
+    //U
+    "(U).*"
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-06;
+        relTol          0;
+        minIter         1;
+    }
+}
+
+PIMPLE
+{
+    consistent		yes;
+    momentumPredictor   yes;
+    nOuterCorrectors    2;
+    nCorrectors         2;
+    nNonOrthogonalCorrectors 1;
+
+    maxCo	0.1;
+    maxAlphaCo 	0.01;
+
+    rDeltaTSmoothingCoeff  0.05;
+    rDeltaTDampingCoeff     0.5;
+    maxDeltaT		    0.00001;
+
+    residualControl
+    {
+        p_rgh           1e-6;
+        alpha.concrete               1e-6;
+    }
+}
+
+relaxationFactors
+{
+    fields
+    {
+	".*" 1;
+    }
+    equations
+    {
+        ".*" 1;
+    }
+
+}
+
+cache
+{
+    grad(U);
+}
+
+// ************************************************************************* //

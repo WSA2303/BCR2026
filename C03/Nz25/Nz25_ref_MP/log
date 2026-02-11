@@ -1,0 +1,840 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8-340defec456f
+Exec   : interFoam
+Date   : Jun 08 2025
+Time   : 13:12:29
+Host   : "DESKTOP-284T8Q6"
+PID    : 32618
+I/O    : uncollated
+Case   : /mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+PIMPLE: Convergence criteria found
+        p_rgh: tolerance 1e-06
+        "alpha.concrete": tolerance 1e-06
+
+
+PIMPLE: No corrector convergence criteria found
+        Calculations will do 2 corrections
+
+
+PIMPLE: Operating solver in transient mode with 2 outer correctors
+
+
+Using LTS
+Reading field p_rgh
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Reading transportProperties
+
+Selecting incompressible transport model HerschelBulkley
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+
+Reading g
+Using #calcEntry at line 20 in file "/mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/constant/g"
+Using #codeStream with "/mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_4b09726558842f8a1636e84e9d5e55e22425e80c.so"
+Creating new library in "dynamicCode/_4b09726558842f8a1636e84e9d5e55e22425e80c/platforms/linux64GccDPInt32Opt/lib/libcodeStream_4b09726558842f8a1636e84e9d5e55e22425e80c.so"
+Invoking "wmake -s libso /mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/_4b09726558842f8a1636e84e9d5e55e22425e80c"
+wmake libso /mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/_4b09726558842f8a1636e84e9d5e55e22425e80c
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/_4b09726558842f8a1636e84e9d5e55e22425e80c/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_4b09726558842f8a1636e84e9d5e55e22425e80c.so
+Using #calcEntry at line 21 in file "/mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/constant/g"
+Using #codeStream with "/mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_3df37afab42ce6e3c6a9b72b92a540a36497ceac.so"
+Creating new library in "dynamicCode/_3df37afab42ce6e3c6a9b72b92a540a36497ceac/platforms/linux64GccDPInt32Opt/lib/libcodeStream_3df37afab42ce6e3c6a9b72b92a540a36497ceac.so"
+Invoking "wmake -s libso /mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/_3df37afab42ce6e3c6a9b72b92a540a36497ceac"
+wmake libso /mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/_3df37afab42ce6e3c6a9b72b92a540a36497ceac
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/_3df37afab42ce6e3c6a9b72b92a540a36497ceac/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_3df37afab42ce6e3c6a9b72b92a540a36497ceac.so
+Using #calcEntry at line 22 in file "/mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/constant/g"
+Using #codeStream with "/mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_66ac0f9874f4e3d3a8063e08e40d1f162e41d10d.so"
+Creating new library in "dynamicCode/_66ac0f9874f4e3d3a8063e08e40d1f162e41d10d/platforms/linux64GccDPInt32Opt/lib/libcodeStream_66ac0f9874f4e3d3a8063e08e40d1f162e41d10d.so"
+Invoking "wmake -s libso /mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/_66ac0f9874f4e3d3a8063e08e40d1f162e41d10d"
+wmake libso /mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/_66ac0f9874f4e3d3a8063e08e40d1f162e41d10d
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/_66ac0f9874f4e3d3a8063e08e40d1f162e41d10d/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_66ac0f9874f4e3d3a8063e08e40d1f162e41d10d.so
+Using #calcEntry at line 24 in file "/mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/constant/g"
+Using #codeStream with "/mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_43764ee7b8d551084d75d768e1e100743a406f2f.so"
+Creating new library in "dynamicCode/_43764ee7b8d551084d75d768e1e100743a406f2f/platforms/linux64GccDPInt32Opt/lib/libcodeStream_43764ee7b8d551084d75d768e1e100743a406f2f.so"
+Invoking "wmake -s libso /mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/_43764ee7b8d551084d75d768e1e100743a406f2f"
+wmake libso /mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/_43764ee7b8d551084d75d768e1e100743a406f2f
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/_43764ee7b8d551084d75d768e1e100743a406f2f/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_43764ee7b8d551084d75d768e1e100743a406f2f.so
+Using #calcEntry at line 25 in file "/mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/constant/g"
+Using #codeStream with "/mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_af1589ee3c1f14fcf27f7bff61cfe41ebacbbd33.so"
+Creating new library in "dynamicCode/_af1589ee3c1f14fcf27f7bff61cfe41ebacbbd33/platforms/linux64GccDPInt32Opt/lib/libcodeStream_af1589ee3c1f14fcf27f7bff61cfe41ebacbbd33.so"
+Invoking "wmake -s libso /mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/_af1589ee3c1f14fcf27f7bff61cfe41ebacbbd33"
+wmake libso /mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/_af1589ee3c1f14fcf27f7bff61cfe41ebacbbd33
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /mnt/c/foamProjects/CREEM/C03/Nz25/Nz25_ref_MP/dynamicCode/_af1589ee3c1f14fcf27f7bff61cfe41ebacbbd33/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_af1589ee3c1f14fcf27f7bff61cfe41ebacbbd33.so
+
+Reading hRef
+Calculating field g.h
+
+No MRF models present
+
+No finite volume options present
+DICPCG:  Solving for pcorr, Initial residual = 0.0597328, Final residual = 7.93876e-09, No Iterations 77
+DICPCG:  Solving for pcorr, Initial residual = 4.04734e-09, Final residual = 4.04734e-09, No Iterations 0
+time step continuity errors : sum local = 1.20885e-18, global = 2.53884e-20, cumulative = 2.53884e-20
+
+Starting time loop
+
+forces forceCoeffs1:
+    Not including porosity effects
+forceCoeffs forceCoeffs1:
+    Not including porosity effects
+forceCoeffs forceCoeffs1 write:
+    Cm    = -3.63213
+    Cd    = -1.19781
+    Cl    = -10.8942
+    Cl(f) = -9.07924
+    Cl(r) = -1.81498
+
+Flow time scale min/max = 1e-05, 1e-05
+Smoothed flow time scale min/max = 1e-05, 1e-05
+Time = 1
+
+PIMPLE: Iteration 1
+smoothSolver:  Solving for alpha.concrete, Initial residual = 1.25168e-24, Final residual = 1.25168e-24, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00113396, Final residual = 2.6721e-08, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 1, Final residual = 3.62726e-07, No Iterations 3
+GAMGPCG:  Solving for p_rgh, Initial residual = 1, Final residual = 1.85813e-07, No Iterations 5
+GAMGPCG:  Solving for p_rgh, Initial residual = 4.57687e-08, Final residual = 4.57687e-08, No Iterations 0
+time step continuity errors : sum local = 1.90245e-07, global = -2.76106e-08, cumulative = -2.76106e-08
+GAMGPCG:  Solving for p_rgh, Initial residual = 0.00251407, Final residual = 5.09972e-07, No Iterations 3
+GAMGPCG:  Solving for p_rgh, Initial residual = 5.70851e-07, Final residual = 5.70851e-07, No Iterations 0
+time step continuity errors : sum local = 2.11449e-06, global = -1.06733e-06, cumulative = -1.09494e-06
+PIMPLE: Iteration 2
+smoothSolver:  Solving for alpha.concrete, Initial residual = 2.69812e-10, Final residual = 2.69812e-10, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 3.07585e-05, Final residual = 1.37926e-07, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.222156, Final residual = 1.24186e-07, No Iterations 3
+GAMGPCG:  Solving for p_rgh, Initial residual = 0.00110535, Final residual = 8.8876e-07, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 8.93643e-07, Final residual = 8.93643e-07, No Iterations 0
+time step continuity errors : sum local = 2.74937e-06, global = -3.18752e-07, cumulative = -1.41369e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 2.00353e-05, Final residual = 6.39565e-08, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 6.39181e-08, Final residual = 6.39181e-08, No Iterations 0
+time step continuity errors : sum local = 1.96768e-07, global = 3.05523e-08, cumulative = -1.38314e-06
+ExecutionTime = 0.13 s  ClockTime = 11 s
+
+forceCoeffs forceCoeffs1 write:
+    Cm    = -4.00813
+    Cd    = -1.19068
+    Cl    = -8.13381
+    Cl(f) = -8.07503
+    Cl(r) = -0.0587786
+
+Flow time scale min/max = 1e-05, 1e-05
+Smoothed flow time scale min/max = 1e-05, 1e-05
+Time = 2
+
+PIMPLE: Iteration 1
+smoothSolver:  Solving for alpha.concrete, Initial residual = 1.81898e-10, Final residual = 1.81898e-10, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00126962, Final residual = 9.1309e-07, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.331259, Final residual = 1.30228e-08, No Iterations 3
+GAMGPCG:  Solving for p_rgh, Initial residual = 0.000124692, Final residual = 2.58193e-07, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 2.58144e-07, Final residual = 2.58144e-07, No Iterations 0
+time step continuity errors : sum local = 7.94836e-07, global = 1.12678e-07, cumulative = -1.27046e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 4.21061e-06, Final residual = 7.51095e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 7.51144e-07, Final residual = 7.51144e-07, No Iterations 0
+time step continuity errors : sum local = 2.31265e-06, global = 1.74374e-07, cumulative = -1.09609e-06
+PIMPLE: Iteration 2
+smoothSolver:  Solving for alpha.concrete, Initial residual = 2.81488e-10, Final residual = 2.81488e-10, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 4.18378e-06, Final residual = 6.30129e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0040241, Final residual = 8.49844e-08, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 9.67069e-06, Final residual = 1.34189e-07, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.34188e-07, Final residual = 1.34188e-07, No Iterations 0
+time step continuity errors : sum local = 4.13144e-07, global = 1.28794e-07, cumulative = -9.67292e-07
+GAMGPCG:  Solving for p_rgh, Initial residual = 2.24684e-06, Final residual = 5.35676e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 5.35683e-07, Final residual = 5.35683e-07, No Iterations 0
+time step continuity errors : sum local = 1.64927e-06, global = 1.803e-07, cumulative = -7.86992e-07
+ExecutionTime = 0.17 s  ClockTime = 11 s
+
+forceCoeffs forceCoeffs1 write:
+    Cm    = -4.05678
+    Cd    = -1.18384
+    Cl    = -8.13329
+    Cl(f) = -8.12342
+    Cl(r) = -0.00986678
+
+Flow time scale min/max = 1e-05, 1e-05
+Smoothed flow time scale min/max = 1e-05, 1e-05
+Damped flow time scale min/max = 1e-05, 1e-05
+Time = 3
+
+PIMPLE: Iteration 1
+smoothSolver:  Solving for alpha.concrete, Initial residual = 2.04562e-10, Final residual = 2.04562e-10, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00129613, Final residual = 6.70371e-07, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0624928, Final residual = 6.93684e-08, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 4.28203e-05, Final residual = 2.68383e-07, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 2.68378e-07, Final residual = 2.68378e-07, No Iterations 0
+time step continuity errors : sum local = 8.26308e-07, global = 1.60124e-07, cumulative = -6.26868e-07
+GAMGPCG:  Solving for p_rgh, Initial residual = 2.1071e-06, Final residual = 5.45593e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 5.45601e-07, Final residual = 5.45601e-07, No Iterations 0
+time step continuity errors : sum local = 1.67983e-06, global = 2.37305e-07, cumulative = -3.89564e-07
+PIMPLE: Iteration 2
+smoothSolver:  Solving for alpha.concrete, Initial residual = 1.64678e-10, Final residual = 1.64678e-10, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 3.79197e-06, Final residual = 3.55598e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00344457, Final residual = 9.61923e-09, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 2.02307e-06, Final residual = 6.0215e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 6.02152e-07, Final residual = 6.02152e-07, No Iterations 0
+time step continuity errors : sum local = 1.85393e-06, global = 3.03089e-07, cumulative = -8.64747e-08
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.77046e-06, Final residual = 5.61181e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 5.61179e-07, Final residual = 5.61179e-07, No Iterations 0
+time step continuity errors : sum local = 1.72779e-06, global = 3.17271e-07, cumulative = 2.30796e-07
+ExecutionTime = 0.21 s  ClockTime = 11 s
+
+forceCoeffs forceCoeffs1 write:
+    Cm    = -4.09008
+    Cd    = -1.17719
+    Cl    = -8.13324
+    Cl(f) = -8.1567
+    Cl(r) = 0.0234581
+
+Flow time scale min/max = 1e-05, 1e-05
+Smoothed flow time scale min/max = 1e-05, 1e-05
+Damped flow time scale min/max = 1e-05, 1e-05
+Time = 4
+
+PIMPLE: Iteration 1
+smoothSolver:  Solving for alpha.concrete, Initial residual = 1.25293e-10, Final residual = 1.25293e-10, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00130208, Final residual = 6.7715e-07, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.398907, Final residual = 2.79963e-07, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.1067e-05, Final residual = 5.50092e-08, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 5.50083e-08, Final residual = 5.50083e-08, No Iterations 0
+time step continuity errors : sum local = 1.69365e-07, global = 6.85172e-08, cumulative = 2.99314e-07
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.17964e-06, Final residual = 3.85146e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 3.85148e-07, Final residual = 3.85148e-07, No Iterations 0
+time step continuity errors : sum local = 1.18582e-06, global = 2.00626e-07, cumulative = 4.9994e-07
+PIMPLE: Iteration 2
+smoothSolver:  Solving for alpha.concrete, Initial residual = 3.893e-11, Final residual = 3.893e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 3.42286e-06, Final residual = 1.25548e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00247374, Final residual = 5.72123e-09, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.24471e-06, Final residual = 4.11705e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 4.11706e-07, Final residual = 4.11706e-07, No Iterations 0
+time step continuity errors : sum local = 1.26759e-06, global = 2.64369e-07, cumulative = 7.64308e-07
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.17047e-06, Final residual = 3.65944e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 3.65944e-07, Final residual = 3.65944e-07, No Iterations 0
+time step continuity errors : sum local = 1.12669e-06, global = 2.6668e-07, cumulative = 1.03099e-06
+ExecutionTime = 0.24 s  ClockTime = 12 s
+
+forceCoeffs forceCoeffs1 write:
+    Cm    = -4.09604
+    Cd    = -1.17071
+    Cl    = -8.13318
+    Cl(f) = -8.16263
+    Cl(r) = 0.0294553
+
+Flow time scale min/max = 1e-05, 1e-05
+Smoothed flow time scale min/max = 1e-05, 1e-05
+Damped flow time scale min/max = 1e-05, 1e-05
+Time = 5
+
+PIMPLE: Iteration 1
+smoothSolver:  Solving for alpha.concrete, Initial residual = 3.29596e-11, Final residual = 3.29596e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00128613, Final residual = 6.80401e-07, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.951354, Final residual = 6.59463e-07, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 7.74812e-06, Final residual = 5.14691e-08, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 5.1469e-08, Final residual = 5.1469e-08, No Iterations 0
+time step continuity errors : sum local = 1.58467e-07, global = 7.72257e-08, cumulative = 1.10821e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.40366e-06, Final residual = 4.57287e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 4.57286e-07, Final residual = 4.57286e-07, No Iterations 0
+time step continuity errors : sum local = 1.40793e-06, global = 1.71565e-07, cumulative = 1.27978e-06
+PIMPLE: Iteration 2
+smoothSolver:  Solving for alpha.concrete, Initial residual = 3.90146e-11, Final residual = 3.90146e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 3.46011e-06, Final residual = 1.87817e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00490087, Final residual = 7.49415e-09, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.5575e-06, Final residual = 4.8664e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 4.8664e-07, Final residual = 4.8664e-07, No Iterations 0
+time step continuity errors : sum local = 1.49831e-06, global = 2.16274e-07, cumulative = 1.49605e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.49794e-06, Final residual = 4.60603e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 4.60604e-07, Final residual = 4.60604e-07, No Iterations 0
+time step continuity errors : sum local = 1.41814e-06, global = 2.2648e-07, cumulative = 1.72253e-06
+ExecutionTime = 0.28 s  ClockTime = 12 s
+
+forceCoeffs forceCoeffs1 write:
+    Cm    = -4.08531
+    Cd    = -1.16438
+    Cl    = -8.13319
+    Cl(f) = -8.15191
+    Cl(r) = 0.0187148
+
+Flow time scale min/max = 1e-05, 1e-05
+Smoothed flow time scale min/max = 1e-05, 1e-05
+Damped flow time scale min/max = 1e-05, 1e-05
+Time = 6
+
+PIMPLE: Iteration 1
+smoothSolver:  Solving for alpha.concrete, Initial residual = 2.51208e-11, Final residual = 2.51208e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00126268, Final residual = 6.74365e-07, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.533557, Final residual = 3.67193e-07, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 6.73954e-06, Final residual = 9.50021e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 9.50031e-07, Final residual = 9.50031e-07, No Iterations 0
+time step continuity errors : sum local = 2.925e-06, global = 1.79969e-07, cumulative = 1.9025e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 2.10909e-06, Final residual = 4.83678e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 4.8368e-07, Final residual = 4.8368e-07, No Iterations 0
+time step continuity errors : sum local = 1.48917e-06, global = 1.68908e-07, cumulative = 2.07141e-06
+PIMPLE: Iteration 2
+smoothSolver:  Solving for alpha.concrete, Initial residual = 5.78604e-11, Final residual = 5.78604e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 3.4771e-06, Final residual = 2.28965e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00555115, Final residual = 9.04327e-09, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.60085e-06, Final residual = 4.27494e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 4.27495e-07, Final residual = 4.27495e-07, No Iterations 0
+time step continuity errors : sum local = 1.31618e-06, global = 1.56423e-07, cumulative = 2.22783e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.44202e-06, Final residual = 3.93654e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 3.93655e-07, Final residual = 3.93655e-07, No Iterations 0
+time step continuity errors : sum local = 1.21199e-06, global = 1.50518e-07, cumulative = 2.37835e-06
+ExecutionTime = 0.31 s  ClockTime = 12 s
+
+forceCoeffs forceCoeffs1 write:
+    Cm    = -4.07089
+    Cd    = -1.15821
+    Cl    = -8.13332
+    Cl(f) = -8.13756
+    Cl(r) = 0.00423266
+
+Flow time scale min/max = 1e-05, 1e-05
+Smoothed flow time scale min/max = 1e-05, 1e-05
+Damped flow time scale min/max = 1e-05, 1e-05
+Time = 7
+
+PIMPLE: Iteration 1
+smoothSolver:  Solving for alpha.concrete, Initial residual = 3.96265e-11, Final residual = 3.96265e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00124648, Final residual = 6.66273e-07, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.166023, Final residual = 1.22894e-07, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 4.94316e-06, Final residual = 6.68137e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 6.68141e-07, Final residual = 6.68141e-07, No Iterations 0
+time step continuity errors : sum local = 2.05707e-06, global = 6.15111e-08, cumulative = 2.43986e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.71286e-06, Final residual = 3.21591e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 3.21591e-07, Final residual = 3.21591e-07, No Iterations 0
+time step continuity errors : sum local = 9.90113e-07, global = 5.92848e-08, cumulative = 2.49915e-06
+PIMPLE: Iteration 2
+smoothSolver:  Solving for alpha.concrete, Initial residual = 3.76998e-11, Final residual = 3.76998e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 3.37428e-06, Final residual = 1.77969e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00605153, Final residual = 7.85328e-09, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.03042e-06, Final residual = 2.37524e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 2.37524e-07, Final residual = 2.37524e-07, No Iterations 0
+time step continuity errors : sum local = 7.31286e-07, global = 5.73845e-08, cumulative = 2.55653e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 9.78346e-07, Final residual = 9.78346e-07, No Iterations 0
+GAMGPCG:  Solving for p_rgh, Initial residual = 9.78346e-07, Final residual = 9.78346e-07, No Iterations 0
+time step continuity errors : sum local = 3.01213e-06, global = 5.64049e-08, cumulative = 2.61294e-06
+ExecutionTime = 0.35 s  ClockTime = 12 s
+
+forceCoeffs forceCoeffs1 write:
+    Cm    = -4.06254
+    Cd    = -1.15219
+    Cl    = -8.13338
+    Cl(f) = -8.12923
+    Cl(r) = -0.00414964
+
+Flow time scale min/max = 1e-05, 1e-05
+Smoothed flow time scale min/max = 1e-05, 1e-05
+Damped flow time scale min/max = 1e-05, 1e-05
+Time = 8
+
+PIMPLE: Iteration 1
+smoothSolver:  Solving for alpha.concrete, Initial residual = 3.40011e-11, Final residual = 3.40011e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00123493, Final residual = 6.61638e-07, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.18229, Final residual = 1.08526e-07, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 3.22805e-06, Final residual = 4.65954e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 4.65952e-07, Final residual = 4.65952e-07, No Iterations 0
+time step continuity errors : sum local = 1.43458e-06, global = 3.35287e-09, cumulative = 2.61629e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.07307e-06, Final residual = 1.62426e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.62427e-07, Final residual = 1.62427e-07, No Iterations 0
+time step continuity errors : sum local = 5.00078e-07, global = -1.17875e-08, cumulative = 2.6045e-06
+PIMPLE: Iteration 2
+smoothSolver:  Solving for alpha.concrete, Initial residual = 7.9686e-12, Final residual = 7.9686e-12, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 3.25559e-06, Final residual = 1.23891e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0134372, Final residual = 2.52873e-08, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 6.23062e-07, Final residual = 6.23062e-07, No Iterations 0
+GAMGPCG:  Solving for p_rgh, Initial residual = 6.23062e-07, Final residual = 6.23062e-07, No Iterations 0
+time step continuity errors : sum local = 1.91828e-06, global = -1.46312e-08, cumulative = 2.58987e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 9.38568e-07, Final residual = 9.38568e-07, No Iterations 0
+GAMGPCG:  Solving for p_rgh, Initial residual = 9.38568e-07, Final residual = 9.38568e-07, No Iterations 0
+time step continuity errors : sum local = 2.88966e-06, global = -1.60983e-08, cumulative = 2.57377e-06
+ExecutionTime = 0.38 s  ClockTime = 12 s
+
+forceCoeffs forceCoeffs1 write:
+    Cm    = -4.05807
+    Cd    = -1.14631
+    Cl    = -8.13337
+    Cl(f) = -8.12476
+    Cl(r) = -0.00861478
+
+Flow time scale min/max = 1e-05, 1e-05
+Smoothed flow time scale min/max = 1e-05, 1e-05
+Damped flow time scale min/max = 1e-05, 1e-05
+Time = 9
+
+PIMPLE: Iteration 1
+smoothSolver:  Solving for alpha.concrete, Initial residual = 1.00703e-11, Final residual = 1.00703e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0012264, Final residual = 6.59615e-07, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.962048, Final residual = 6.38995e-07, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 2.66637e-06, Final residual = 1.81054e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.81054e-07, Final residual = 1.81054e-07, No Iterations 0
+time step continuity errors : sum local = 5.57428e-07, global = -1.13261e-07, cumulative = 2.46051e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 7.0927e-07, Final residual = 7.0927e-07, No Iterations 0
+GAMGPCG:  Solving for p_rgh, Initial residual = 7.0927e-07, Final residual = 7.0927e-07, No Iterations 0
+time step continuity errors : sum local = 2.1837e-06, global = -1.1559e-07, cumulative = 2.34492e-06
+PIMPLE: Iteration 2
+smoothSolver:  Solving for alpha.concrete, Initial residual = 1.65522e-11, Final residual = 1.65522e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 3.16769e-06, Final residual = 9.22194e-11, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.000257577, Final residual = 3.57505e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 9.97455e-07, Final residual = 9.97455e-07, No Iterations 0
+GAMGPCG:  Solving for p_rgh, Initial residual = 9.97455e-07, Final residual = 9.97455e-07, No Iterations 0
+time step continuity errors : sum local = 3.07096e-06, global = -1.16581e-07, cumulative = 2.22834e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.13477e-06, Final residual = 2.24252e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 2.24252e-07, Final residual = 2.24252e-07, No Iterations 0
+time step continuity errors : sum local = 6.90426e-07, global = -1.20473e-07, cumulative = 2.10787e-06
+ExecutionTime = 0.41 s  ClockTime = 12 s
+
+forceCoeffs forceCoeffs1 write:
+    Cm    = -4.05857
+    Cd    = -1.14058
+    Cl    = -8.13337
+    Cl(f) = -8.12526
+    Cl(r) = -0.00810819
+
+Flow time scale min/max = 1e-05, 1e-05
+Smoothed flow time scale min/max = 1e-05, 1e-05
+Damped flow time scale min/max = 1e-05, 1e-05
+Time = 10
+
+PIMPLE: Iteration 1
+smoothSolver:  Solving for alpha.concrete, Initial residual = 1.38319e-11, Final residual = 1.38319e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0012209, Final residual = 6.60215e-07, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.439744, Final residual = 2.95982e-07, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 2.70029e-06, Final residual = 4.36591e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 4.36591e-07, Final residual = 4.36591e-07, No Iterations 0
+time step continuity errors : sum local = 1.34417e-06, global = -1.66404e-07, cumulative = 1.94146e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 8.59274e-07, Final residual = 8.59274e-07, No Iterations 0
+GAMGPCG:  Solving for p_rgh, Initial residual = 8.59274e-07, Final residual = 8.59274e-07, No Iterations 0
+time step continuity errors : sum local = 2.64552e-06, global = -1.71534e-07, cumulative = 1.76993e-06
+PIMPLE: Iteration 2
+smoothSolver:  Solving for alpha.concrete, Initial residual = 3.23907e-11, Final residual = 3.23907e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 3.1335e-06, Final residual = 1.00239e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.000291134, Final residual = 2.40499e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.16498e-06, Final residual = 3.52269e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 3.52269e-07, Final residual = 3.52269e-07, No Iterations 0
+time step continuity errors : sum local = 1.08456e-06, global = -1.77754e-07, cumulative = 1.59217e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 7.7392e-07, Final residual = 7.7392e-07, No Iterations 0
+GAMGPCG:  Solving for p_rgh, Initial residual = 7.7392e-07, Final residual = 7.7392e-07, No Iterations 0
+time step continuity errors : sum local = 2.38273e-06, global = -1.82728e-07, cumulative = 1.40945e-06
+ExecutionTime = 0.47 s  ClockTime = 12 s
+
+forceCoeffs forceCoeffs1 write:
+    Cm    = -4.06186
+    Cd    = -1.13498
+    Cl    = -8.13334
+    Cl(f) = -8.12853
+    Cl(r) = -0.00480919
+
+Flow time scale min/max = 1e-05, 1e-05
+Smoothed flow time scale min/max = 1e-05, 1e-05
+Damped flow time scale min/max = 1e-05, 1e-05
+Time = 11
+
+PIMPLE: Iteration 1
+smoothSolver:  Solving for alpha.concrete, Initial residual = 2.65855e-11, Final residual = 2.65855e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0012171, Final residual = 6.62282e-07, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.186117, Final residual = 1.281e-07, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 2.99082e-06, Final residual = 6.04657e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 6.04657e-07, Final residual = 6.04657e-07, No Iterations 0
+time step continuity errors : sum local = 1.86161e-06, global = -2.68403e-07, cumulative = 1.14104e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.12782e-06, Final residual = 2.93171e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 2.93171e-07, Final residual = 2.93171e-07, No Iterations 0
+time step continuity errors : sum local = 9.0261e-07, global = -1.9086e-07, cumulative = 9.50183e-07
+PIMPLE: Iteration 2
+smoothSolver:  Solving for alpha.concrete, Initial residual = 2.67283e-11, Final residual = 2.67283e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 3.12398e-06, Final residual = 1.26293e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00354812, Final residual = 7.24385e-09, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 8.91846e-07, Final residual = 8.91846e-07, No Iterations 0
+GAMGPCG:  Solving for p_rgh, Initial residual = 8.91846e-07, Final residual = 8.91846e-07, No Iterations 0
+time step continuity errors : sum local = 2.7458e-06, global = -1.94577e-07, cumulative = 7.55606e-07
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.25023e-06, Final residual = 3.78591e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 3.78591e-07, Final residual = 3.78591e-07, No Iterations 0
+time step continuity errors : sum local = 1.1656e-06, global = -2.00189e-07, cumulative = 5.55416e-07
+ExecutionTime = 0.49 s  ClockTime = 12 s
+
+forceCoeffs forceCoeffs1 write:
+    Cm    = -4.06612
+    Cd    = -1.12952
+    Cl    = -8.13331
+    Cl(f) = -8.13278
+    Cl(r) = -0.000531188
+
+Flow time scale min/max = 1e-05, 1e-05
+Smoothed flow time scale min/max = 1e-05, 1e-05
+Damped flow time scale min/max = 1e-05, 1e-05
+Time = 12
+
+PIMPLE: Iteration 1
+smoothSolver:  Solving for alpha.concrete, Initial residual = 2.34868e-11, Final residual = 2.34868e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00121362, Final residual = 6.64625e-07, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0426732, Final residual = 2.86945e-08, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.25337e-06, Final residual = 1.49763e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.49763e-07, Final residual = 1.49763e-07, No Iterations 0
+time step continuity errors : sum local = 4.61087e-07, global = -9.28289e-08, cumulative = 4.62587e-07
+GAMGPCG:  Solving for p_rgh, Initial residual = 8.1467e-07, Final residual = 8.1467e-07, No Iterations 0
+GAMGPCG:  Solving for p_rgh, Initial residual = 8.1467e-07, Final residual = 8.1467e-07, No Iterations 0
+time step continuity errors : sum local = 2.50818e-06, global = -9.26053e-08, cumulative = 3.69982e-07
+PIMPLE: Iteration 2
+smoothSolver:  Solving for alpha.concrete, Initial residual = 2.14595e-11, Final residual = 2.14595e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 3.04465e-06, Final residual = 1.01039e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 9.60595e-05, Final residual = 1.3581e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.18854e-06, Final residual = 3.23648e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 3.23649e-07, Final residual = 3.23649e-07, No Iterations 0
+time step continuity errors : sum local = 9.96437e-07, global = -1.58448e-07, cumulative = 2.11534e-07
+GAMGPCG:  Solving for p_rgh, Initial residual = 8.74523e-07, Final residual = 8.74523e-07, No Iterations 0
+GAMGPCG:  Solving for p_rgh, Initial residual = 8.74523e-07, Final residual = 8.74523e-07, No Iterations 0
+time step continuity errors : sum local = 2.69245e-06, global = -1.60799e-07, cumulative = 5.07346e-08
+ExecutionTime = 0.52 s  ClockTime = 12 s
+
+forceCoeffs forceCoeffs1 write:
+    Cm    = -4.0671
+    Cd    = -1.12419
+    Cl    = -8.13332
+    Cl(f) = -8.13376
+    Cl(r) = 0.000438656
+
+Flow time scale min/max = 1e-05, 1e-05
+Smoothed flow time scale min/max = 1e-05, 1e-05
+Damped flow time scale min/max = 1e-05, 1e-05
+Time = 13
+
+PIMPLE: Iteration 1
+smoothSolver:  Solving for alpha.concrete, Initial residual = 1.94096e-11, Final residual = 1.94096e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00120804, Final residual = 6.6505e-07, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.142657, Final residual = 9.42055e-08, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 2.02883e-06, Final residual = 3.31211e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 3.31212e-07, Final residual = 3.31212e-07, No Iterations 0
+time step continuity errors : sum local = 1.01972e-06, global = -2.11123e-07, cumulative = -1.60388e-07
+GAMGPCG:  Solving for p_rgh, Initial residual = 8.41527e-07, Final residual = 8.41527e-07, No Iterations 0
+GAMGPCG:  Solving for p_rgh, Initial residual = 8.41527e-07, Final residual = 8.41527e-07, No Iterations 0
+time step continuity errors : sum local = 2.59085e-06, global = -2.10643e-07, cumulative = -3.71031e-07
+PIMPLE: Iteration 2
+smoothSolver:  Solving for alpha.concrete, Initial residual = 1.24209e-11, Final residual = 1.24209e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 3.00308e-06, Final residual = 1.02525e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.000247463, Final residual = 1.96891e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.19531e-06, Final residual = 1.66507e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.66507e-07, Final residual = 1.66507e-07, No Iterations 0
+time step continuity errors : sum local = 5.12635e-07, global = -1.39022e-07, cumulative = -5.10053e-07
+GAMGPCG:  Solving for p_rgh, Initial residual = 6.76152e-07, Final residual = 6.76152e-07, No Iterations 0
+GAMGPCG:  Solving for p_rgh, Initial residual = 6.76152e-07, Final residual = 6.76152e-07, No Iterations 0
+time step continuity errors : sum local = 2.08171e-06, global = -1.37553e-07, cumulative = -6.47606e-07
+ExecutionTime = 0.56 s  ClockTime = 12 s
+
+forceCoeffs forceCoeffs1 write:
+    Cm    = -4.06784
+    Cd    = -1.11898
+    Cl    = -8.13333
+    Cl(f) = -8.1345
+    Cl(r) = 0.00116926
+
+Flow time scale min/max = 1e-05, 1e-05
+Smoothed flow time scale min/max = 1e-05, 1e-05
+Damped flow time scale min/max = 1e-05, 1e-05
+Time = 14
+
+PIMPLE: Iteration 1
+smoothSolver:  Solving for alpha.concrete, Initial residual = 1.15763e-11, Final residual = 1.15763e-11, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.001202, Final residual = 6.65002e-07, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.404861, Final residual = 2.76309e-07, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.60903e-06, Final residual = 2.55294e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 2.55294e-07, Final residual = 2.55294e-07, No Iterations 0
+time step continuity errors : sum local = 7.85988e-07, global = -1.24982e-07, cumulative = -7.72588e-07
+GAMGPCG:  Solving for p_rgh, Initial residual = 6.66422e-07, Final residual = 6.66422e-07, No Iterations 0
+GAMGPCG:  Solving for p_rgh, Initial residual = 6.66422e-07, Final residual = 6.66422e-07, No Iterations 0
+time step continuity errors : sum local = 2.05175e-06, global = -1.24084e-07, cumulative = -8.96673e-07
+PIMPLE: Iteration 2
+smoothSolver:  Solving for alpha.concrete, Initial residual = 6.43903e-12, Final residual = 6.43903e-12, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 2.9631e-06, Final residual = 1.03752e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0003535, Final residual = 3.72865e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 9.52882e-07, Final residual = 9.52882e-07, No Iterations 0
+GAMGPCG:  Solving for p_rgh, Initial residual = 9.52882e-07, Final residual = 9.52882e-07, No Iterations 0
+time step continuity errors : sum local = 2.9337e-06, global = -1.24504e-07, cumulative = -1.02118e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.09547e-06, Final residual = 1.97409e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.97409e-07, Final residual = 1.97409e-07, No Iterations 0
+time step continuity errors : sum local = 6.07775e-07, global = -1.46821e-07, cumulative = -1.168e-06
+ExecutionTime = 0.59 s  ClockTime = 12 s
+
+forceCoeffs forceCoeffs1 write:
+    Cm    = -4.06704
+    Cd    = -1.1139
+    Cl    = -8.13334
+    Cl(f) = -8.13371
+    Cl(r) = 0.000370844
+
+Flow time scale min/max = 1e-05, 1e-05
+Smoothed flow time scale min/max = 1e-05, 1e-05
+Damped flow time scale min/max = 1e-05, 1e-05
+Time = 15
+
+PIMPLE: Iteration 1
+smoothSolver:  Solving for alpha.concrete, Initial residual = 6.91357e-12, Final residual = 6.91357e-12, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00119496, Final residual = 6.63977e-07, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.477645, Final residual = 3.13177e-07, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 7.08966e-07, Final residual = 7.08966e-07, No Iterations 0
+GAMGPCG:  Solving for p_rgh, Initial residual = 7.08966e-07, Final residual = 7.08966e-07, No Iterations 0
+time step continuity errors : sum local = 2.18274e-06, global = -1.51929e-07, cumulative = -1.31993e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 9.7498e-07, Final residual = 9.7498e-07, No Iterations 0
+GAMGPCG:  Solving for p_rgh, Initial residual = 9.7498e-07, Final residual = 9.7498e-07, No Iterations 0
+time step continuity errors : sum local = 3.00173e-06, global = -1.50921e-07, cumulative = -1.47085e-06
+PIMPLE: Iteration 2
+smoothSolver:  Solving for alpha.concrete, Initial residual = 6.26803e-12, Final residual = 6.26803e-12, No Iterations 0
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+MULES: Correcting alpha.concrete
+Phase-1 volume fraction = 0.2  Min(alpha.concrete) = 0  Max(alpha.concrete) = 1
+smoothSolver:  Solving for Ux, Initial residual = 2.9257e-06, Final residual = 1.06055e-10, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.000319205, Final residual = 1.31382e-08, No Iterations 2
+GAMGPCG:  Solving for p_rgh, Initial residual = 1.13454e-06, Final residual = 2.26101e-07, No Iterations 1
+GAMGPCG:  Solving for p_rgh, Initial residual = 2.26101e-07, Final residual = 2.26101e-07, No Iterations 0
+time step continuity errors : sum local = 6.9611e-07, global = -1.3115e-07, cumulative = -1.602e-06
+GAMGPCG:  Solving for p_rgh, Initial residual = 5.00548e-07, Final residual = 5.00548e-07, No Iterations 0
+GAMGPCG:  Solving for p_rgh, Initial residual = 5.00548e-07, Final residual = 5.00548e-07, No Iterations 0
+time step continuity errors : sum local = 1.54107e-06, global = -1.29936e-07, cumulative = -1.73193e-06
+ExecutionTime = 0.62 s  ClockTime = 12 s
+
+
+PIMPLE solution converged in 15 iterations
+
+forceCoeffs forceCoeffs1 write:
+    Cm    = -4.06638
+    Cd    = -1.10893
+    Cl    = -8.13335
+    Cl(f) = -8.13306
+    Cl(r) = -0.000290437
+
+End
+
