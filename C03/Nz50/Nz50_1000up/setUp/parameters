@@ -1,0 +1,21 @@
+// Flow properties
+
+	h0			0.0335;      // [m]
+	uMed	  		1.1968; 		// [m/s]
+	
+	
+// Geometry
+
+	Lx			#calc"10 * $h0";		// [m]
+	Lz		 	#calc"5 * $h0";		// [m]
+	
+	
+// mesh
+
+	numOfVol_Air	 	         10;
+	numOfVol_concrete		 50;
+    numOfVol_interface		#calc"1 * $numOfVol_concrete";
+	numOfVol_x			#calc"2 * $numOfVol_concrete";
+	
+
+

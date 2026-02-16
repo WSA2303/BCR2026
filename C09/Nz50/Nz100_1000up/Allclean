@@ -1,0 +1,11 @@
+#!/bin/bash
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+foamListTimes -rm
+rm -r ./constant/polyMesh
+rm *.dat
+rm -r dynamicCode
+rm -r postProcessing
+rm -r 0
+
+
