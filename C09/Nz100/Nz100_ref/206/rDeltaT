@@ -1,0 +1,61 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "206";
+    object      rDeltaT;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 -1 0 0 0 0];
+
+internalField   uniform 100000;
+
+boundaryField
+{
+    inlet_water
+    {
+        type            extrapolatedCalculated;
+        value           uniform 100000;
+    }
+    inlet_air
+    {
+        type            extrapolatedCalculated;
+        value           uniform 100000;
+    }
+    outlet_water
+    {
+        type            extrapolatedCalculated;
+        value           uniform 100000;
+    }
+    outlet_air
+    {
+        type            extrapolatedCalculated;
+        value           uniform 100000;
+    }
+    lowerWall
+    {
+        type            extrapolatedCalculated;
+        value           uniform 100000;
+    }
+    atmosphere
+    {
+        type            extrapolatedCalculated;
+        value           uniform 100000;
+    }
+    defaultFaces
+    {
+        type            empty;
+    }
+}
+
+
+// ************************************************************************* //

@@ -1,1 +1,18 @@
+<<<<<<< HEAD
 *.Zone.Identifier*
+=======
+*.Zone.Identifier*
+
+# OpenFOAM (gerados)
+**/dynamicCode/
+**/processor*/
+**/log*
+**/VTK/
+**/*.OpenFOAM
+
+# mas mantém as condições iniciais
+!**/0/
+!**/0/**
+!**/0.org/
+!**/0.org/**
+>>>>>>> b023321 (Resultados v2.0)
