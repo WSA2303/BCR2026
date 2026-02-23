@@ -70,6 +70,25 @@ functions
     	lRef        0.335;
     	Aref        0.0112;
     }
+    wallShearStress1
+    {
+        type            wallShearStress;
+
+        // funciona na maioria das versões do OpenFOAM:
+        libs            ("libfieldFunctionObjects.so");
+        // se essa linha der erro, tente:
+        // libs         (fieldFunctionObjects);
+
+        // paredes que você quer:
+        patches         (lowerWall);
+
+        // gera somente quando o solver escrever (mais leve):
+        executeControl  writeTime;
+        writeControl    writeTime;
+
+        writeToFile     true;   // postProcessing/wallShearStress1/<tempo>/
+        log             true;
+    }
 }
 // ************************************************************************* //
 
