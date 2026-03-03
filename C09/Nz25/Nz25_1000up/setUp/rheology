@@ -5,7 +5,7 @@
  	nu0_concrete	        0.58333;				// kinematic viscosity [m²/s]
  	
  	
- 	tau0_concrete	        0.076551;				// yield stress [m²/s²]	
+ 	tau0_concrete	        0.07655;				// yield stress [m²/s²]	
  		
  	k_concrete		0.0005833;				// consistency Index [m²/s]
 

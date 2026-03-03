@@ -1,7 +1,7 @@
 // Flow properties
 
 	h0			0.0335;      // [m]
-	uMed	  		1.1968; 		// [m/s]
+	uMed	  		1.19675; 		// [m/s]
 	
 	
 // Geometry
