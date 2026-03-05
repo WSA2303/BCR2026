@@ -87,19 +87,10 @@ PIMPLE
     rDeltaTDampingCoeff     0.5;
     maxDeltaT		    0.00001;
 
-    residualControl
+       residualControl
     {
-    p_rgh
-    {
-        tolerance  1e-6;
-        relTol     0;
-    }
-
-    alpha.concrete
-    {
-        tolerance  1e-6;
-        relTol     0;
-    }
+        p_rgh           1e-6;
+        alpha.concrete               1e-6;
     }
 }
 
