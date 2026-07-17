@@ -1,1 +1,12 @@
-*.Zone.Identifier*
+# Ignorar todos os arquivos
+*Zone.Identifier
+
+# Permitir que o Git percorra os diretórios
+!*/
+
+# Incluir o próprio .gitignore
+!.gitignore
+
+# Incluir somente as pastas postProcessing e seu conteúdo
+!**/postProcessing/
+!**/postProcessing/**
